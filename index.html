@@ -1,0 +1,528 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <title>Djay for Mathworks</title>
+    <style>
+    .slide-number {
+      font-size:24px;
+    }
+    .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+      text-transform: none!important;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+<section>
+  <h2> Djay for <img src="img/ge_logo.png" style="vertical-align: middle;"> </h2>
+  <p> 2 December 2016
+  <p> Dhanannjay Deo (धनंजय देव)
+</section>
+
+<section>
+  <section data-markdown>###Outline
+  - About me
+  - Experiences
+    - Graduate research
+    - Notable projects
+  - Digital SlideAtlas in detail
+  </section>
+
+  <section data-markdown>
+  ###About this Presentation
+  - Built with [reveal.js](http://lab.hakim.se/reveal-js/#/)
+  - Hosted at [dhandeo.github.io](https://dhandeo.github.io/djay_for_mathworks/#/)
+  </section>
+
+  <section data-markdown>
+  ###Why web
+  - Always wanted a hands on experience
+  - Like the nested slide layout
+  - Good for interactive demos over web (no alt+tab)
+  - Easy support over all smart devices
+  </section>
+</section>
+
+<section>
+  <img src="img/wordcloud_dark.svg" class="stretch" style="border:none">
+</section>
+
+<!-- <section><h2> Education </h2></section> -->
+
+<section>
+  <section>
+    <h3>Master of Science (faculty of engineering)</h3>
+    <p> Indian Institute of Science, Bangalore, India, 2003-6 </p>
+    <br>
+    <br>
+    <p> Product design, mechanism design, geometric modeling, CAD </p>
+  </section>
+  <section>
+    <h4>Mesh processing for computerized facial anthropometry</h4>
+    <img src="img/ms_idea.jpg" class="stretch">
+  </section>
+  <section>
+    <h4> Input and process </h4>
+    <img src="img/ms_basis.jpg" class="stretch">
+    <p> Triangulated surface, gaussian curvature, thresholding and morphological operations
+  </section>
+  <section>
+    <h4> Prototype </h4>
+    <img src="img/ms_gui.jpg" class="stretch">
+    <p> c, python, matlab, OpenGL, glut, glui
+  </section>
+</section>
+
+<section>
+  <section>
+    <h3> Doctor of Philosophy (Mechanical engineering) </h3>
+    <p> Rensselaer Polytechnic Institute, Troy, NY, 2005-10 </p>
+    <br>
+    <p> Computational mathematics, Computational mechanics,
+    (linear and nonlinear) finite element method,
+    Software design
+  </section>
+
+  <section>
+    <h3> Simulation based training </h3>
+    <img src="img/training.jpg" class="stretch">
+    <p> For laparoscopic surgery
+  </section>
+
+
+  <section>
+    <p class="fragment"> How soft tissues interact with the tool
+    <p class="fragment"> How do they deform
+    <p class="fragment"> How do they cut or burn
+    <p class="fragment"> How much reaction force is exerted on the tool
+    <p class="fragment" style="color:red"> Experiment !!
+  </section>
+
+  <section>
+    <img src="img/rpi_setup.jpg" class="stretch">
+  </section>
+
+  <section>
+    <p class="fragment"> What are models of soft tissues
+    <p class="fragment"> How to simulate soft tissues ?
+    <p class="fragment" style="color:red"> Use COTS solver like Abaqus
+    <p class="fragment"> How to interactively simulate soft tissues ?
+    <p class="fragment" style="color:green">in realtime ?</span>
+  </section>
+
+  <section>
+    <h3> Simulator architecture </h3>
+    <img src="img/simulator.jpg" class="stretch">
+  </section>
+
+  <section>
+    <h3> PhyNNeSS </h3>
+    <img src="img/phynness.jpg" class="stretch">
+    <p> Tunable data approximation using radial basis function network
+    <p> C++, OpenGL, python, <span style="color:red">matlab</span>
+  </section>
+
+</section>
+
+<section>
+  <h3>Notable projects at Kitware Inc <img src="img/kitware.jpg" style="vertical-align:middle"> </h3>
+  <br>
+  <p> Kitware is technical software company specializing in R and D in the domains of medical imaging, computer vision and scientific visualization
+</section>
+
+<section>
+  <section>
+    <h2> Kitware GENIE </h2>
+    <p>  General Engine for Indexing Events </p>
+    <p class="fragment"> Content based video classification and search
+    <p class="fragment"> Interactive evaluation of machine learning system
+    <!-- <p class="fragment"> One shot video search pipeline -->
+    <p class="fragment" style="color:red"> Demo </span>
+  </section>
+
+  <section>
+    <video src="img/triage.webm" controls class="stretch">
+      Your browser does not support the <code>video</code> element.
+    </video>
+    <p> Disclaimer: my words but not my voice
+  </section>
+
+  <section>
+    <video src="img/iqr.webm" controls class="stretch">
+      Your browser does not support the <code>video</code> element.
+    </video>
+    <p> full stack web, python, javascript, celery, MongoDB, sqlite3
+    <p> "IARPA Program manager included this demo in her deck"
+  </section>
+
+  <section>
+    <p class="fragment"> Accept query in natural language and match to the higher level features available
+    <p class="fragment"> How to combine scores of each selected feature for ultimate ranking
+    <p class="fragment" style="color:red"> How ?
+    <p class="fragment"> ScoreFusion vs RankFusion vs TwistedStrategyMarch6
+    <img class="fragment stretch" src="img/scorefusion.jpg">
+  </section>
+
+  <section>
+    <img class="stretch" style="border:none" src="img/semantic_exploration.svg">
+  </section>
+
+  <section>
+    <p class="fragment"> Intelligence Advanced Research Projects Activity (IARPA)
+    <p class="fragment"> TrevVID multimedia event detection and recounting
+  </section>
+</section>
+
+<section data-markdown>
+###Beyond day job
+- 3d modeling and animation
+- Endurance cycling
+- DIY Furniture design
+</section>
+
+
+<section>
+  <h3> Digital SlideAtlas </h3>
+  <img src="img/multiuser.jpg" class="stretch">
+</section>
+
+<section>
+  <h3> Digital Slide Atlas </h3>
+  <iframe src="https://slide-atlas.org" class="stretch">
+   Sorry your browser does not support inline frames.
+  </iframe>
+</section>
+
+<section data-markdown>
+  ## Features
+  - An open-source, web-based microscopy image platform
+  - Automated upload and pre-processing, directly from slide scanners
+  - Interactive high-performance viewing on desktop and mobile devices
+  - Archiving, access control, and voice search features
+  - Annotation tools
+  - 3D stack creation and viewing
+</section>
+
+<section data-markdown>
+  ##Technical Challenges
+</section>
+
+<section>
+  <section>
+    <h3> Large scale of image data </h3>
+    <p class="fragment"> Typical whole slide image size 1gb
+    <p class="fragment" style="color:red"> compressed (150000x85000px ~ 12 GigaPixel)
+    <p class="fragment"> Largest was over 1 tera pixel, and sometimes there is a stack
+    <p class="fragment"> A hundred can be loaded in cartrige
+    <p class="fragment"> Hundreds of students per session
+    <p class="fragment" style="color:green"> Thankfully will access similar set of images
+    <p class="fragment"> Data copy becomes prohibitive
+  </section>
+
+  <section>
+    <p class="fragment"> Variety of file formats, vendor specific, source specific
+    <p class="fragment"> Open source ?
+    <p class="fragment"> SDK available ?
+    <p class="fragment"> Specification available?
+    <p class="fragment"> Versions ?
+    <p class="fragment"> Endianness ?
+    <p class="fragment" style="color:red">
+  </section>
+
+  <section>
+    <p class="fragment"> Do we support ?
+    <p class="fragment">   Should we ?
+    <p class="fragment">    Could we ?
+    <p class="fragment" style="color:red"> support contract ?
+  </section>
+
+  <section>
+    <h3> Additional infomation (metadata) </h3>
+    <p class="fragment"> Custom metadata like bar code
+    <p class="fragment"> Absence of expected label image etc
+    <p class="fragment"> unknown metadata (To save or not to save)
+    <p class="fragment"> Anonymize patient information
+    <p class="fragment"> Owners copyright and trust
+    <p class="fragment"> Security and access control list
+  </section>
+</section>
+
+<section>
+  <section data-markdown>
+    ## Multiresolution image streaming
+
+    - Minimum data transfer (at interactive rates)
+    - What to store and What to compute
+    - Jpeg2000 vs image pyramid
+  </section>
+
+  <section>
+    <h3>Image pyramid</h3>
+    <img src="img/pyramid.jpg" class="stretch">
+  </section>
+
+  <section>
+    <h3>Locating the image tile</h3>
+    <img src="img/tile_names.jpg" class="stretch">
+  </section>
+
+  <section data-markdown>
+    ## Image stores
+
+      - Abstract interface
+      - MongdoDB collection
+      - Indexed binary blob directly in record
+      - File based store - pyramidal TIFF format
+      - Configurable stores
+      - Remotely hosted (you host your own data)
+  </section>
+
+  <section>
+    <h3> Uploaded over web </h3>
+      <p class="fragment"> Diced on client into 1mb chunks,
+      <p class="fragment"> Last chunk of the upload stream triggers processing task
+      <p class="fragment"> Distributed task queue asssembles the file and converts to image pyramid
+      <p class="fragment"> Named queues, to leverage platform specific SDK
+      <p class="fragment"> Image avaiable for interactive viewing
+  </section>
+  <section>
+    <h3> Images deposited in shared folder </h3>
+    <p class="fragment"> For certain labs microscopes
+    <p class="fragment"> Hearbeat process monitors the folder for any additions
+    <p class="fragment"> Files are queued for processing
+  </section>
+
+  <section>
+    <p class="fragment"> Decision tree to select best reader
+    <!-- <pre class="fragment"><code data-trim data-noescape>
+    reader->CanReadFile() // returns 0, 1, 2, 3
+    </pre> -->
+
+    <p class="fragment"> Normalize coordinate system
+    <p class="fragment"> Pre compute thumbnails
+  </section>
+
+  <section data-markdown>
+    ### Compression
+    - Distributed image compression
+      - Will full image fit in memory ?
+      - Full strip (256px x height)?
+      - 5 tiles ?
+    - Multithreading Symmetric or queue consumers
+    - C++ code wrapped in python for image processing
+  </section>
+</section>
+
+<section data-markdown>
+    ### Optimizations (Cutting the corners)
+
+    - Quality of compression
+    - Shared Jpeg quantization tables (TIFF jpeg compression mode 6)
+    - Persistent connections Websockets
+</section>
+
+<section data-markdown>
+  ### Smoother navigation
+    - Prefetching
+    - Lower resolution tiles first
+    - Suppress interactivity while rendering
+</section>
+
+<section>
+  <section><h3>Deployment and workflow<h3></section>
+  <section data-markdown>
+    ###Developer setup
+    - Docker container with all dependencies
+    - Dummy database or map ports to production database
+  </section>
+  <section data-markdown>
+    ### Production setup
+    - Apache reverse proxy
+    - Python gunicorn wsgi workers
+    - MongoDB cluster (Replica set)
+    - sqlite for plugin data
+    - GlusterFS for remote synced file systems
+    - git hookes to restart server on push
+  </section>
+  <section data-markdown>
+    ### Sustainance
+    - Pingdom
+    - check_mk or nagios
+    - Backup
+      - File system backup
+      - MongoDB does not support hot backup
+      - Slave node backup
+  </section>
+</section>
+
+<section>
+  <section data-markdown>
+      ## Technical features
+  </section>
+  <section data-markdown>
+    ### Non-blocking IO
+    - Network and disc
+    - Serve multiple users simultaneously
+    - Monkey patching python standard library for non blocking network IO
+    - Distribute all blocking disc access services to another processes
+  </section>
+  <section data-markdown>
+      ### Memory mapped files
+      - MongoDB
+      - Map files in virtual memory and access data directly instead of file io system calls
+      - Efficient access for large files
+      - Easy to share large file resources across processes
+  </section>
+  <section data-markdown>
+      ### LRU Cache
+      - Limit open files on the server
+      - over remote file system
+      - Performance against stability
+      - Tune each system and usage pattern
+  </section>
+</section>
+
+<section>
+  <section data-markdown>
+    ## Plugins / custom development
+  </section>
+
+  <section> <h3> Color histograms and thresholding </h3>
+    <img src="img/histograms.jpg" class="stretch">
+  </section>
+
+  <section><h3>Object level change detections plugin </h3>
+    <img src="img/machine-learning.jpg" class="stretch">
+  </section>
+
+  <section>
+    <h3> Machine learning </h3>
+      <p class="fragment"> SlideAtlas as annotation platform to generate ground truth
+      <p class="fragment"> Deep convolutional neural networks trained with Caffe
+      <p class="fragment"> Transfer learning from CIFAR-10 dataset
+      <p class="fragment"> Multi class object detector
+  </section>
+
+  <section data-markdown>
+    ### On client side component in javascript
+    - Creates button(s) and registers callbacks
+    - User actions
+      - Identify image region(s) with bounding boxes
+      - Select the parameters for operation
+      - Submit the task to server
+      - Long poll / websockets to wait and fetch
+      - Control how vector and raster overlays are displayed
+  </section>
+
+  <section data-markdown>
+    ### On server side component in python
+    - Web server accepts an analysis request
+    - Submit the analysis task to "celery" job queue
+    - Queue assembles the image as specified
+    - Runs analysis
+    - Compile results
+    - Results returned when requested by client
+    - Book keeping
+  </section>
+
+  <!-- <section>
+    <h3>Microscopy Automation</h3>
+    <p> TODO: Add a video
+  </section> -->
+</section>
+
+<section>
+  <section>
+    <h3>Profiling and automated tests</h3>
+    <img src="img/testing.jpg" class="stretch">
+  </section>
+
+  <section data-markdown>
+    ### Smoke test
+    - Connect with developer machine or live server
+    - Selenium to complete user interaction
+    - Compare screenshots
+    - Run javascript tests
+  </section>
+
+  <section data-markdown>
+    ### Unit tests
+    - Internal API tests
+    - Useful to demonstrate usage
+  </section>
+
+  <section data-markdown>
+    ### Performance tests
+    - Selenium to complete user interaction for a particular configuration
+    - Reports statistics (response time, latency etc)
+  </section>
+
+</section>
+
+<section data-markdown>
+### Latest/Future considerations
+- Portable embeddeble module
+- Tradeoff interactivity for scalability
+- WebGL rendering of selected overlays
+- Use of memory maps for TIFF readers
+- ZeroMQ connected server and image tile serving microservices
+</section>
+
+<section>
+  <section data-markdown>
+    ### Promise for Education
+    - Curated image archive with annotations from generations of clinical practice
+    - Targeting medical schools, residency training, continuing education
+    - Features for selective hiding of annotations, quiz mode, and full-screen presentation creation
+    - Remote and collaborative viewing
+
+  </section>
+
+  <section data-markdown>
+    ### Promise for Research
+    - Supporting image processing algorithms, and very large datasets
+    - Consulting
+    - Automatic batch upload of images
+  </section>
+</section>
+
+<section data-markdown>
+  ### Summary
+  - Diverse skillsets
+  - End-to-end research and development
+  - Creative prototypes
+ </section>
+
+<section>
+  <h3> Questions, Comments, Advisements ?</h3>
+  <p>
+  <br>
+  <br>
+  <pre style="font-size:24px">
+                               dhandeo@gmail.com
+            https://github.com/dhandeo
+   https://www.linkedin.com/in/dhandeo
+           https://twitter.com/dhandeo
+  </pre>
+</section>
+
+<section>
+  <h3>Thank you ! </h3>
+  <img src="img/dilbert.jpg" class="stretch">
+</section>
+
+
+
+      </div>
+    </div>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
